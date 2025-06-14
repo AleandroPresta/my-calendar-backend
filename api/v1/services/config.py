@@ -29,3 +29,12 @@ promptConfig: dict = {
         "name": "PromptServiceLogger"
     }
 }
+
+bridgeConfig: dict = {
+    "logging": {
+        "level": logging.DEBUG,
+        "path": "api/logs/api/services",
+        "filename": "bridge_service.log",
+        "name": "BridgeServiceLogger"
+    }
+}
