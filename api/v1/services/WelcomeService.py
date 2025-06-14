@@ -1,6 +1,6 @@
 from .GeminiService import GeminiService
-from ..utils.api import load_api_key
-from ..utils.logging import setup_logging
+from ...utils.api import load_api_key
+from ...utils.logging import setup_logging
 from .config import welcomeConfig as config
 
 # Initialize the logger

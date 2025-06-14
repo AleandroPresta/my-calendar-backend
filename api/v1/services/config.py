@@ -3,7 +3,7 @@ import logging
 geminiConfig: dict = {
     "logging": {
         "level": logging.DEBUG,
-        "path": "logs/api/services",
+        "path": "api/logs/api/services",
         "filename": "gemini_service.log"
     },
     "gemini": {
@@ -14,7 +14,7 @@ geminiConfig: dict = {
 welcomeConfig: dict = {
     "logging": {
         "level": logging.DEBUG,
-        "path": "logs/api/services",
+        "path": "api/logs/api/services",
         "filename": "welcome_service.log"
     }
 }

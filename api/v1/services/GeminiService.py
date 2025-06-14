@@ -17,17 +17,17 @@ class GeminiService:
     """
 
     def __init__(self, api_key: str):
-        logger.info("[GeminiService.GeminiService.__init__] Initializing GeminiService with provided API key.")
+        logger.info("[GeminiService.__init__] Initializing GeminiService with provided API key.")
         configure(api_key=api_key)
-        logger.debug("[GeminiService.GeminiService.__init__] API key configured successfully.")
+        logger.debug("[GeminiService.__init__] API key configured successfully.")
 
-        logger.info("[GeminiService.GeminiService.__init__] Creating GenerativeModel instance.")
+        logger.info("[GeminiService.__init__] Creating GenerativeModel instance.")
         self.model: GenerativeModel = GenerativeModel(model_name=config["gemini"]["model_name"])
-        logger.debug(f"[GeminiService.GeminiService.__init__] Model instance created: {self.model}")
+        logger.debug(f"[GeminiService.__init__] Model instance created: {self.model}")
 
 
     def send_message(self, message: str) -> str:
-        logger.info("[GeminiService.GeminiService.send_message] Generating content using the model.")
+        logger.info("[GeminiService.send_message] Generating content using the model.")
         result = self.model.generate_content(message)
-        logger.debug("[GeminiService.GeminiService.send_message] Content generation completed.")
+        logger.debug("[GeminiService.send_message] Content generation completed.")
         return result.text

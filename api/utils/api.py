@@ -12,7 +12,7 @@ def load_api_key(name: str) -> str:
     Load the API key from environment variables.
     """
     # Load environment variables from .env file in the project root
-    project_root: str = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+    project_root: str = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
     logger.debug(f"[utils.api] Project root directory: {project_root}")
     dotenv_path: str = os.path.join(project_root, '.env')
     logger.debug(f"[utils.api] Dotenv path: {dotenv_path}")
