@@ -1,4 +1,4 @@
-from config import promptConfig as config
+from .config import promptConfig as config
 from ...utils.logging import setup_logging
 
 # Initialize the logger
