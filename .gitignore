@@ -7,3 +7,4 @@ __pycache__/
 db.sqlite3
 .pytest_cache/
 *.log
+api/v1/services/credentials.json
